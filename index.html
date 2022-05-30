@@ -1,270 +1,50 @@
-<!-- HTML5 -->
-
-<!-- UI -->
-<!-- SEO -->
-<!-- Accessibility -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Encoding Technic  -->
     <meta charset="UTF-8">
-    
-    <!-- Support Html5 element in IE browser  -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-
-    <!-- responsive UI -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- SEO -->
-    <meta name="description" content="">
-
-    <!-- SEO -->
-    <meta name="keywords" content="html,css,javascript">
-
-
     <title>Portfolio</title>
-
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <!-- Inline element -->
-    <!-- block Element -->
-
-    <div>
-        hello 
-    </div>
-    <h1>Block element</h1>
-
-    <span>Hello</span><em>how are you?</em>
-
-    <!-- deprecated -->
-    <!-- <b>Hello</b> -->
-    <!-- SEO -->
-    <!-- <strong>Hello</strong> -->
-
-    <!-- Deprecated -->
-    <!-- <i>Hello</i> -->
-
-    <!-- SEO -->
-    <!-- <em>Hello</em> -->
-
-    <!-- <div>
-        hello
-    </div> -->
-
-    <!-- <p>
-        hello
-    </p> -->
-
-    <!-- h1-h6 -->
-    <!-- p -->
-    <!-- div * span * -->
-
-    <!-- <div role="text">
-        hello from div tag
-    </div> -->
     <header>
         <a href="#">
-            Logo
+            <!-- <img src="./images/bear@1x.jpg" srcset="./images/bear@2x.jpg 2x, ./images/bear@3x.jpg 3x" alt="logo icon" /> -->
+            <picture>
+                <source srcset="./images/bear@3x.jpg" media="(min-width: 1024px)">
+                <source srcset="./images/bear@2x.jpg" media="(min-width: 720px)">
+                <img src="./images/bear@1x.jpg" alt="beer image" loading="lazy">
+            </picture>
+
+            <!-- <picture>
+                <source srcset="./images/bear@1x.avif" type="image/avif">
+                <source srcset="./images/bear@1x.webp" type="image/webp">
+                <img src="./images/bear@1x.jpg" alt="beer image">
+            </picture> -->
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" height="50px" width="50px" fill="red"><path d="M24 41.95 21.95 40.1Q13.8 32.65 8.9 27.1Q4 21.55 4 15.85Q4 11.35 7.025 8.325Q10.05 5.3 14.5 5.3Q17.05 5.3 19.55 6.525Q22.05 7.75 24 10.55Q26.2 7.75 28.55 6.525Q30.9 5.3 33.5 5.3Q37.95 5.3 40.975 8.325Q44 11.35 44 15.85Q44 21.55 39.1 27.1Q34.2 32.65 26.05 40.1ZM24 23.15Q24 23.15 24 23.15Q24 23.15 24 23.15Q24 23.15 24 23.15Q24 23.15 24 23.15Q24 23.15 24 23.15Q24 23.15 24 23.15Q24 23.15 24 23.15Q24 23.15 24 23.15Q24 23.15 24 23.15Q24 23.15 24 23.15Q24 23.15 24 23.15Q24 23.15 24 23.15ZM24 38Q31.6 31 36.3 25.85Q41 20.7 41 15.85Q41 12.55 38.875 10.425Q36.75 8.3 33.5 8.3Q31 8.3 28.8 9.85Q26.6 11.4 25.2 14.3H22.75Q21.4 11.4 19.175 9.85Q16.95 8.3 14.5 8.3Q11.2 8.3 9.1 10.425Q7 12.55 7 15.85Q7 20.7 11.7 25.85Q16.4 31 24 38Z"/></svg>
+
+
+            <!-- <img src="./images/favorite.svg" alt="favorite icon"> -->
         </a>
 
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Projects</a>
-                </li>
-                <li>
-                    <a href="#">Blogs</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <aside>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quas eligendi itaque esse molestias, tempore voluptatibus corrupti minus cum deserunt nulla illum ipsa fugiat velit consequatur veritatis, numquam aliquam vel?
-    </aside>
-    <main>
-        <section id="banner">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae non neque tempore excepturi nisi nobis maxime mollitia dolores distinctio aspernatur porro libero consequuntur fugiat dolorem voluptatum, earum saepe. Cumque, repellendus?
-        </section>
+        <!-- <video controls poster="./images/bear@1x.jpg" preload>
+            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm" />
+            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4"/>
+            <p>Video is not supported by the browser</p>
+        </video> -->
 
-        <section id="about">
-            <article>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, numquam.
-            </article>
-            <details>
-                Lorem ipsum dolor sit amet.
-            </details>
-        </section>
+        <audio controls>
+            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3" />
+            <p>audio not supported</p>
+        </audio>
+    </header>
+    <main>
+
     </main>
     <footer>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repellendus cumque quasi quibusdam ut fuga eligendi similique vero quae qui facilis, autem, cupiditate rerum aliquam hic animi temporibus. Facere, tempora?
+
     </footer>
-
-    <address>
-
-    </address>
-    <time>
-
-    </time>
-    <figure>
-        <img src="" alt="">
-        <figcaption></figcaption>
-    </figure>
-
-    <picture>
-        <source src="" type="image/webp" media="" />
-    </picture>
-
-    <dialog>
-       hello from dialog Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam deserunt tempore alias, exercitationem perspiciatis blanditiis, ullam impedit ipsum deleniti consectetur nesciunt odit animi inventore quisquam eveniet? Earum nemo non porro!
-    </dialog>
-
-    <details>
-        <summary>Hello from summary</summary>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat optio cupiditate ut natus dolore sint totam accusantium, dolorem harum maxime, consequuntur, recusandae fugiat quia. Iusto quis modi iste dignissimos voluptate.</p>
-    </details>
-<form novalidate>
-    <div>
-        <label for="name">Name:</label>
-        <input type="text" placeholder="Please enter name:" autofocus required name="name" id="name" aria-invalid="true" aria-errormessage="nameErr" autocomplete="family-name" />
-        <span id="nameErr" class="errormessage">Error: Enter a valid email address</span>
-    </div>
-    <div>
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" aria-invalid="true" aria-errormessage="emailErr" autocomplete="email" />
-        <span id="emailErr" class="errormessage">Error: Enter a valid email address</span>
-    </div>
-    <div>
-        <label for="mobile">Mobile:</label>
-        <input type="tel" name="mobile" id="mobile" aria-invalid="true" aria-errormessage="mobileErr" autocomplete="tel" />
-        <span id="mobileErr" class="errormessage">Error: Enter a valid email address</span>
-    </div>
-    <div>
-        <label for="password">Password:</label>
-        <input type="password" name="password" id="password" aria-invalid="true" aria-errormessage="passwordErr" autocomplete="one-time-code" />
-        <span id="passwordErr" class="errormessage">Error: Enter a valid email address</span>
-    </div>
-    
-
-    <input type="email" placeholder="email" />
-    <input type="password" placeholder="password" />
-    <input type="number" placeholder="number" />
-    <input type="tel" placeholder="telephone" />
-    <input type="search" placeholder="search" />
-    <input type="url" placeholder="url" />
-
-    <!-- date inputs -->
-    <input type="date" />
-    <input type="time" />
-    <input type="datetime-local" />
-    <input type="week" />
-    <input type="month" />
-
-    <input type="color" />
-
-    <input type="checkbox" />
-    <input type="radio" />
-
-    <input type="range" />
-
-    <input type="file" multiple />
-
-    <select>
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-    </select>
-
-    <select name="" id="">
-        <optgroup label="Sports">
-            <option value="ckricket">Cricket</option>
-            <option value="Football">Football</option>
-        </optgroup>
-        <optgroup label="Activity">
-            <option value="Dance">Dance</option>
-            <option value="Drawing">Drawing</option>
-        </optgroup>
-    </select>
-
-    <select name="" id="" multiple>
-        <optgroup label="Sports">
-            <option value="ckricket">Cricket</option>
-            <option value="Football">Football</option>
-        </optgroup>
-        <optgroup label="Activity">
-            <option value="Dance">Dance</option>
-            <option value="Drawing">Drawing</option>
-        </optgroup>
-    </select>
-
-    <select multiple>
-        <option value="cricket">Cricker</option>
-        <option value="Hocky">Hocky</option>
-        <option value="Football">Football</option>
-    </select>
-
-    <input type="text" name="" id="" placeholder="Select hobbies" list="hobbies">
-
-    <datalist id="hobbies">
-        <option value="Cricket" />
-        <option value="Hocky" />
-        <option value="Football" />
-    </datalist>
-
-    <!-- <progress value="30" max="100" /> -->
-<div>
-    <meter min="0" max="100" value="60" optimum="80" low="30" high="60" />
-</div>
-
-    <textarea name="" id="" cols="30" rows="10"></textarea>
-
-    <fieldset>
-        <legend>gender</legend>
-        <div>
-        <input type="radio" name="gender" id="male">
-        <label for="male">Male</label>
-    </div>
-    <div>
-        <input type="radio" name="gender" id="female">
-        <label for="female">Female</label>
-    </div>
-    </fieldset>
-
-    <button type="submit">Submit Data</button>
-
-</form>
-
-    <!-- <div>
-        <div id="header">
-            <div id="logo">
-
-            </div>
-            <div id="navigation">
-                <a href="#">Home</a><a href="#">About</a><a href="#">Projects</a><a href="#">Blogs</a><a href="#">contact</a>
-            </div>
-        </div>
-        <div id="side">
-            side section
-        </div>
-        <div id="main">
-            main section
-        </div>
-        <div id="footer">
-
-        </div>
-    </div>     -->
-
-    
     
 </body>
 </html>
