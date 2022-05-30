@@ -126,7 +126,7 @@
         <source src="" type="image/webp" media="" />
     </picture>
 
-    <dialog open>
+    <dialog>
        hello from dialog Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam deserunt tempore alias, exercitationem perspiciatis blanditiis, ullam impedit ipsum deleniti consectetur nesciunt odit animi inventore quisquam eveniet? Earum nemo non porro!
     </dialog>
 
@@ -134,6 +134,115 @@
         <summary>Hello from summary</summary>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat optio cupiditate ut natus dolore sint totam accusantium, dolorem harum maxime, consequuntur, recusandae fugiat quia. Iusto quis modi iste dignissimos voluptate.</p>
     </details>
+<form novalidate>
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Please enter name:" autofocus required name="name" id="name" aria-invalid="true" aria-errormessage="nameErr" autocomplete="family-name" />
+        <span id="nameErr" class="errormessage">Error: Enter a valid email address</span>
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" aria-invalid="true" aria-errormessage="emailErr" autocomplete="email" />
+        <span id="emailErr" class="errormessage">Error: Enter a valid email address</span>
+    </div>
+    <div>
+        <label for="mobile">Mobile:</label>
+        <input type="tel" name="mobile" id="mobile" aria-invalid="true" aria-errormessage="mobileErr" autocomplete="tel" />
+        <span id="mobileErr" class="errormessage">Error: Enter a valid email address</span>
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" aria-invalid="true" aria-errormessage="passwordErr" autocomplete="one-time-code" />
+        <span id="passwordErr" class="errormessage">Error: Enter a valid email address</span>
+    </div>
+    
+
+    <input type="email" placeholder="email" />
+    <input type="password" placeholder="password" />
+    <input type="number" placeholder="number" />
+    <input type="tel" placeholder="telephone" />
+    <input type="search" placeholder="search" />
+    <input type="url" placeholder="url" />
+
+    <!-- date inputs -->
+    <input type="date" />
+    <input type="time" />
+    <input type="datetime-local" />
+    <input type="week" />
+    <input type="month" />
+
+    <input type="color" />
+
+    <input type="checkbox" />
+    <input type="radio" />
+
+    <input type="range" />
+
+    <input type="file" multiple />
+
+    <select>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+
+    <select name="" id="">
+        <optgroup label="Sports">
+            <option value="ckricket">Cricket</option>
+            <option value="Football">Football</option>
+        </optgroup>
+        <optgroup label="Activity">
+            <option value="Dance">Dance</option>
+            <option value="Drawing">Drawing</option>
+        </optgroup>
+    </select>
+
+    <select name="" id="" multiple>
+        <optgroup label="Sports">
+            <option value="ckricket">Cricket</option>
+            <option value="Football">Football</option>
+        </optgroup>
+        <optgroup label="Activity">
+            <option value="Dance">Dance</option>
+            <option value="Drawing">Drawing</option>
+        </optgroup>
+    </select>
+
+    <select multiple>
+        <option value="cricket">Cricker</option>
+        <option value="Hocky">Hocky</option>
+        <option value="Football">Football</option>
+    </select>
+
+    <input type="text" name="" id="" placeholder="Select hobbies" list="hobbies">
+
+    <datalist id="hobbies">
+        <option value="Cricket" />
+        <option value="Hocky" />
+        <option value="Football" />
+    </datalist>
+
+    <!-- <progress value="30" max="100" /> -->
+<div>
+    <meter min="0" max="100" value="60" optimum="80" low="30" high="60" />
+</div>
+
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+    <fieldset>
+        <legend>gender</legend>
+        <div>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+    </div>
+    <div>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+    </div>
+    </fieldset>
+
+    <button type="submit">Submit Data</button>
+
+</form>
 
     <!-- <div>
         <div id="header">
