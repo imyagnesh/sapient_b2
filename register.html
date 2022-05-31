@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+</head>
+<body>
+    <dialog open modal-mode="mega">
+        <form method="dialog">
+                <header>
+                    <h1>Registration Form</h1>
+                    <button onclick="this.closest('dialog').close('close')">X</button>
+                </header>
+                <main>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required />
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required  />
+                    </div>
+                        <fieldset>
+                            <legend>Gender</legend>
+                            <div>
+                                <input type="radio" name="gender" id="Male" autocomplete="sex" required>
+                                <label for="Male">Male</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="gender" id="Female" autocomplete="sex" required>
+                                <label for="Female">Female</label>
+                            </div>
+                        </fieldset>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required />
+                    </div>
+                    <div>
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword"  required />
+                    </div>
+                </main>
+                <footer>
+                    <menu>
+                      <button autofocus type="reset" onclick="this.closest('dialog').close('cancel')">Cancel</button>
+                      <button type="submit" value="confirm">Confirm</button>
+                    </menu>
+                </footer>
+        </form>
+    </dialog>
+
+
+
+   
+</body>
+</html>
