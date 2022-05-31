@@ -1,0 +1,109 @@
+
+article h1:first-of-type {
+    color: red
+}
+
+article p:last-child {
+    color: red;
+}
+
+ul > li:nth-child(3n) {
+    color: green;
+}
+
+/* a:visited {
+    text-decoration: solid;
+} */
+
+button:disabled {
+    background-color: gray;
+}
+
+/* p::selection {
+    background-color: pink;
+} */
+
+/* span::before {
+    content: "...";
+    display: block;
+} */
+
+
+/* p::first-line {
+    font-size: 2rem;
+    color: red;
+} */
+
+/* p:first-child::first-letter {
+    font-size: 2rem;
+    color: red;
+} */
+
+p:first-of-type::first-letter {
+    font-size: 2rem;
+    color: red;
+}
+
+/* .highlight {
+    font-size: 2rem;
+    color: red;
+} */
+
+a:hover {
+    color: red;
+}
+
+
+
+
+
+/* ">" is for immediate children  */
+/* "~" is for next all siblings */
+/* "+" is for next immediate sibling */
+
+
+/* body > header > a {
+    background-color: green;
+} */
+
+/* a {
+    text-decoration: none;
+} */
+
+/* a[href^="https://"] {
+    text-decoration: underline;
+} */
+
+/* a[href*="google"] {
+    text-decoration: underline;
+} */
+
+/* a[href$=".com"] {
+    text-decoration: underline;
+} */
+
+/* a[class~="abc"] {
+    text-decoration: underline;
+} */
+
+/* a[class|="https://www.google.com"] {
+    text-decoration: underline;
+} */
+
+/* div[lang|="en"] {
+    color: red;
+} */
+
+
+/* a {
+    text-decoration: none;
+}
+
+header.heading.test {
+    background-color: aqua;
+} */
+
+.test {
+
+}
+
