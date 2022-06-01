@@ -1,109 +1,91 @@
-
-article h1:first-of-type {
-    color: red
+.tweet {
+    border: 2px solid gray;
 }
 
-article p:last-child {
-    color: red;
+.tweet--mod {
+    background-color: #fafafa;
 }
 
-ul > li:nth-child(3n) {
-    color: green;
-}
-
-/* a:visited {
-    text-decoration: solid;
-} */
-
-button:disabled {
-    background-color: gray;
-}
-
-/* p::selection {
-    background-color: pink;
-} */
-
-/* span::before {
-    content: "...";
+.tweet::after {
+    content: '';
     display: block;
-} */
-
-
-/* p::first-line {
-    font-size: 2rem;
-    color: red;
-} */
-
-/* p:first-child::first-letter {
-    font-size: 2rem;
-    color: red;
-} */
-
-p:first-of-type::first-letter {
-    font-size: 2rem;
-    color: red;
+    clear: both;
 }
 
-/* .highlight {
-    font-size: 2rem;
-    color: red;
-} */
+.tweet__avatar {
+    height: 5rem;
+    width: 5rem;
+    background-color: gold;
+    float: right;
+    margin-right: 10px;
+}
 
-a:hover {
-    color: red;
+.clear {
+    clear: both;
 }
 
 
+/* absolute */
+/* relative */
 
+/* em -> depend on parent font size */
+/* rem -> depend on browser font size */
+/* % -> depend on parent element height and width */
+/* vh/vw -> depend on screen size */
 
+/* 1em = 9px -> when browser font is small */
+/* 1em = 12px -> when browser font is small */
+/* 1em = 16px -> when browser font is medium */
+/* 1em = 20px -> when browser font is large */
+/* 1em = 24px -> when browser font is very large */
 
-/* ">" is for immediate children  */
-/* "~" is for next all siblings */
-/* "+" is for next immediate sibling */
-
-
-/* body > header > a {
-    background-color: green;
+/* .box {
+    background-color: red;
+    height: 200px;  
+    width: 200px;
+    overflow: auto hidden;
 } */
 
-/* a {
-    text-decoration: none;
-} */
+/* 
 
-/* a[href^="https://"] {
-    text-decoration: underline;
-} */
+relative: relative to elements normal position
+absolute: relative to parent
+fixed: relative to the viewport
+ */
 
-/* a[href*="google"] {
-    text-decoration: underline;
-} */
-
-/* a[href$=".com"] {
-    text-decoration: underline;
-} */
-
-/* a[class~="abc"] {
-    text-decoration: underline;
-} */
-
-/* a[class|="https://www.google.com"] {
-    text-decoration: underline;
-} */
-
-/* div[lang|="en"] {
-    color: red;
-} */
-
-
-/* a {
-    text-decoration: none;
+/* .boxes {
+    border: 3px solid lightgray;
+    position: relative;
+    height: 50vh;
 }
 
-header.heading.test {
-    background-color: aqua;
-} */
-
-.test {
-
+.box {
+    height: 5rem;
+    width: 5rem;
 }
 
+.box.one {
+    background-color: gold;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.box.two {
+    background-color: coral;
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+    z-index: 2;
+}
+
+.box.three {
+    background-color: dodgerblue;
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    z-index: 1;
+    
+}
+ */
