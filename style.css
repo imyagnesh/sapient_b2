@@ -76,3 +76,17 @@ a {
     text-decoration: none;
     color: initial;
 }
+
+.wrapper {
+    display: grid;
+    height: 60vh;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+
+.wrapper > .box {
+    background-color: red;
+}
