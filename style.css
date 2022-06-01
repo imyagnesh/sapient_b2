@@ -1,91 +1,17 @@
-.tweet {
-    border: 2px solid gray;
+header.app-header {
+    display: flex;
 }
 
-.tweet--mod {
-    background-color: #fafafa;
+nav > ul {
+    padding: 0;
+    margin: 0;
 }
 
-.tweet::after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
-.tweet__avatar {
-    height: 5rem;
-    width: 5rem;
-    background-color: gold;
-    float: right;
-    margin-right: 10px;
-}
-
-.clear {
-    clear: both;
-}
-
-
-/* absolute */
-/* relative */
-
-/* em -> depend on parent font size */
-/* rem -> depend on browser font size */
-/* % -> depend on parent element height and width */
-/* vh/vw -> depend on screen size */
-
-/* 1em = 9px -> when browser font is small */
-/* 1em = 12px -> when browser font is small */
-/* 1em = 16px -> when browser font is medium */
-/* 1em = 20px -> when browser font is large */
-/* 1em = 24px -> when browser font is very large */
-
-/* .box {
-    background-color: red;
-    height: 200px;  
-    width: 200px;
-    overflow: auto hidden;
-} */
-
-/* 
-
-relative: relative to elements normal position
-absolute: relative to parent
-fixed: relative to the viewport
- */
-
-/* .boxes {
-    border: 3px solid lightgray;
-    position: relative;
-    height: 50vh;
-}
-
-.box {
-    height: 5rem;
-    width: 5rem;
-}
-
-.box.one {
-    background-color: gold;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 3;
-}
-
-.box.two {
-    background-color: coral;
-    position: absolute;
-    top: 2.5rem;
-    left: 2.5rem;
-    z-index: 2;
-}
-
-.box.three {
-    background-color: dodgerblue;
-    position: absolute;
-    top: 5rem;
-    left: 5rem;
-    z-index: 1;
+nav > ul > li {
+    list-style: none;
     
 }
- */
+
+nav > ul > li > a {
+    text-decoration: none;
+}
