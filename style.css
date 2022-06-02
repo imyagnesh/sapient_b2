@@ -8,7 +8,8 @@ body {
     display: grid;
     grid-template: 
     "header header"
-    "main main" auto / 20% 1fr;
+    "main main"
+    "footer footer";
 }
 
 .sr-only {
@@ -33,10 +34,16 @@ header {
 aside {
     grid-area: aside;
     display: none;
+    background-color: #EBECEC;
 }
 
 main {
     grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #EBECEC;
 }
 
 .container {
@@ -101,9 +108,9 @@ section.products > div.products__item {
     padding: 0.75rem;
     display: grid;
     grid-template: 
-    "title title"
-    "image content"
-    "image buyNow"; 
+    "title title" 30px
+    "image content" 1fr
+    "image buyNow" 46px / 1fr 1fr; 
     align-items: center;
 }
 
@@ -141,7 +148,8 @@ section.products > div.products__item > button {
     body {
         grid-template: 
         "header header"
-        "aside main" auto / 20% 1fr;
+        "aside main" 1fr 
+        "footer footer" 50px / 20% 1fr;
     }
 
     aside {
