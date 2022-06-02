@@ -1,0 +1,18 @@
+.btn {
+    height: 46px;
+    border: none;
+    background-color: #A81444;
+    color: #fff;
+}
+
+.categories__item {
+    display: flex;
+    height: 300px;
+}
+.categories__item > div {
+    flex: 1;
+}
+
+.categories__item > div > img {
+    height: 100%;
+}
