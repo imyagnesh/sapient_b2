@@ -15,11 +15,17 @@
     border: none;
     background-color: #A81444;
     color: #fff;
+    padding: 0 1rem;
+}
+
+.btn--full {
+    width: 100%;
 }
 
 .container {
     max-width: 1024px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 ul {
@@ -46,6 +52,8 @@ form {
 .form-field {
     width: 100%;
     position: relative;
+    overflow: hidden;
+    margin: 2rem 0;
 }
 
 .form-field > .form-field__label {

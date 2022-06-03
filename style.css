@@ -22,11 +22,6 @@ main {
     grid-area: main;
 }
 
-footer {
-    grid-area: footer;
-    background-color: #EBECEC;
-}
-
 section.products {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
