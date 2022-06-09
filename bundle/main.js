@@ -1,1 +1,0 @@
-(()=>{const n=new class{constructor(n){this.name=n}printName=()=>this.name};console.log(n.printName())})();

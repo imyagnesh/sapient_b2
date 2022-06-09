@@ -5,11 +5,25 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack serve"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/imyagnesh/sapient_b2.git"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "last 1 ie version"
+    ]
   },
   "author": "",
   "license": "ISC",
@@ -18,7 +32,18 @@
   },
   "homepage": "https://github.com/imyagnesh/sapient_b2#readme",
   "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "autoprefixer": "^10.4.7",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "postcss": "^8.4.14",
+    "postcss-loader": "^7.0.0",
+    "postcss-nested": "^5.0.6",
+    "style-loader": "^3.3.1",
     "webpack": "^5.73.0",
-    "webpack-cli": "^4.9.2"
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.2"
   }
 }
