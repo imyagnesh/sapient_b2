@@ -1,11 +1,22 @@
 
 import '../styles/index.scss';
 
+window.addEventListener("popstate", (e) => {
+    const category = e.state;
+    console.log(category);
+    loadProducts()
+})
+
 const loadProducts = async () => {
     try {
+        const productsUrl = "http://localhost:3000/products"
+
+        const params = new URLSearchParams(window.location.search);
+        console.log(params);
+
         const res = await Promise.all([
             fetch("http://localhost:3000/categories"),
-            fetch("http://localhost:3000/products"),
+            fetch(productsUrl),
         ]);
         const json = await Promise.all([
             res[0].json(),
@@ -45,7 +56,7 @@ const loadProducts = async () => {
                     currency: "INR",
                     style: "currency"
                 }).format(element.price)}</span>
-                <button>Buy Now</button>
+                <button class="btn">Buy Now</button>
             `;
 
             productsSection.appendChild(itemsDiv);
