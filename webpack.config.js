@@ -1,11 +1,15 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const pages = ["index", "login", "register", "products"];
 
 module.exports = {
-    entry: ['./src/index.js'],
+    entry: pages.reduce((p, c) => {
+        p[c] = `./src/${c}.js`;
+        return p;
+    }, {}),
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "main.js",
+        filename: "[name].js",
     },
     mode: "development",
     module: {
@@ -19,21 +23,24 @@ module.exports = {
                 test: /\.s[ac]ss$/,
                 exclude: /node_modules/,
                 use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"]
-              }
+            }
         ]
     },
-    plugins: [
-        new HtmlWebpackPlugin(
-            {
-                template: "./public/index.html",
-                filename: "index.html"
-            }
-        )],
-        devServer: {
-            static: {
-                directory: path.join(__dirname, "static"),
-                publicPath: "/static"
-            }
+    optimization: {
+        splitChunks: {
+            chunks: "all"
         }
+    },
+    plugins: [].concat(pages.map(page => new HtmlWebpackPlugin({
+        template: `./public/${page}.html`,
+        filename: `${page}.html`,
+        chunks: [page]
+    }))),
+    devServer: {
+        static: {
+            directory: path.join(__dirname, "static"),
+            publicPath: "/static"
+        }
+    }
 
 };
