@@ -1,21 +1,38 @@
-import { a } from './app'
 
-import '../styles/index.css';
+import '../styles/index.scss';
 
-class Abc {
-    constructor(name) {
-        this.name = name;
-    }
+const loadProducts = async () => {
+    try {
+        const res = await fetch("http://localhost:3000/products");
+        const json = await res.json();
 
-    printName = () => {
-        return this.name
+        const productsSection = document.getElementById("products");
+
+        for (let i = 0; i < json.length; i++) {
+
+            const element = json[i];
+            const itemsDiv = document.createElement("div");
+
+            itemsDiv.className = "products__item";
+
+            itemsDiv.innerHTML = `
+                <h2>${element.name}</h2>
+                <img src="${element.imageURL}" alt="${element.name} Image" />
+                <p>${element.description}</p>
+                <span>MRP ${new Intl.NumberFormat("en-IN", {
+                    currency: "INR",
+                    style: "currency"
+                }).format(element.price)}</span>
+                <button>Buy Now</button>
+            `;
+
+            productsSection.appendChild(itemsDiv);
+        }
+
+        console.log(json);
+    } catch (error) {
+        
     }
 }
 
-const abc = new Abc();
-
-console.log(a);
-
-console.log("hello world")
-
-console.log(abc.printName());
+loadProducts()

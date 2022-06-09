@@ -3,24 +3,7 @@
     color: initial;
 } */
 
-body {
-    min-height: 100vh;
-    display: grid;
-    grid-template: 
-    "header header"
-    "main main"
-    "footer footer";
-}
 
-aside {
-    grid-area: aside;
-    display: none;
-    background-color: #EBECEC;
-}
-
-main {
-    grid-area: main;
-}
 
 section.products {
     display: grid;
@@ -69,17 +52,6 @@ section.products > div.products__item > button {
 }
 
 @media screen and (min-width: 768px) {
-    body {
-        grid-template: 
-        "header header"
-        "aside main" 1fr 
-        "footer footer" 50px / 20% 1fr;
-    }
-
-    aside {
-        display: block;
-    }
-
     section.products > div.products__item {
         grid-template: 
         "title title"

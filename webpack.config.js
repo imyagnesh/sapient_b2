@@ -5,7 +5,7 @@ module.exports = {
     entry: ['./src/index.js'],
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "main.js"
+        filename: "main.js",
     },
     mode: "development",
     module: {
@@ -16,9 +16,9 @@ module.exports = {
                 use: "babel-loader"
             },
             {
-                test: /\.css$/,
+                test: /\.s[ac]ss$/,
                 exclude: /node_modules/,
-                use: ["style-loader", "css-loader", "postcss-loader"]
+                use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"]
               }
         ]
     },
@@ -29,5 +29,11 @@ module.exports = {
                 filename: "index.html"
             }
         )],
+        devServer: {
+            static: {
+                directory: path.join(__dirname, "static"),
+                publicPath: "/static"
+            }
+        }
 
 };
